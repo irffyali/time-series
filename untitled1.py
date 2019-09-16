@@ -10,7 +10,7 @@ from fbprophet import Prophet
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-df = pd.read_csv('C:/Users/irffy/OneDrive/Documents/Msc project files/MPS_LSOA_Level_Crime_Historic.csv') #obtain csv form lin in read me change file 
+df = pd.read_csv('C:/Users/irffy/OneDrive/Documents/Msc project files/MPS_LSOA_Level_Crime_Historic.csv') #obtain csv from link in read me file 
 df['totals'] = df.iloc[:, 4:].sum(axis=0)
 months = list(df.columns)[4:]
 months.pop()
